@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Seymour+One&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,5 +7,6 @@
 }
 
 h1 {
+  font-family: "Seymour One", sans-serif;
   color: limegreen;
 }

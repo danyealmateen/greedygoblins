@@ -6,7 +6,10 @@
   padding: 0;
 }
 
-h1 {
+body {
   font-family: "Seymour One", sans-serif;
+}
+
+h1 {
   color: limegreen;
 }

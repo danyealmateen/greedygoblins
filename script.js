@@ -1,6 +1,10 @@
+//The button that fires the function renderNewsPaper()
 let buttonForRenderingNewspaper = document.getElementById(
   "buttonForRenderingNewspaper"
 );
+
+
+let articleOne = document.getElementById("article-one");
 
 buttonForRenderingNewspaper.addEventListener("click", () => {
   renderNewsPaper();
@@ -14,6 +18,10 @@ function renderNewsPaper() {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
+      data.articles.forEach((obj) => {
+        console.log(obj);
+      });
+
       console.log(data);
     });
 }

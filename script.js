@@ -33,4 +33,5 @@ function renderNewsPaper() {
       });
       console.log(data);
     });
+  
 }

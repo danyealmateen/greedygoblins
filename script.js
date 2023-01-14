@@ -32,6 +32,10 @@ function renderNewsPaper() {
         console.log(obj);
       });
       console.log(data);
-    });
+    })
   
+    .catch(error => {
+        h1.innerHTML = "Det blev ett fel";
+        console.log(error);
+    });
 }

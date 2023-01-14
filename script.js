@@ -1,7 +1,7 @@
 let renderArticles = document.getElementById("renderArticles");
+
 renderArticles.addEventListener("click", () => {
   renderNewsPaper();
-  console.log("hej du har klickat mig");
 });
 
 let articleDiv = document.createElement("div");
@@ -27,12 +27,10 @@ function renderNewsPaper() {
         </br>
         <hr>
         </br>
-        
         `;
         document.body.appendChild(articleDiv);
         console.log(obj);
       });
-
       console.log(data);
     });
 }

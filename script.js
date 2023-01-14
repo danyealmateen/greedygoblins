@@ -22,10 +22,12 @@ function renderNewsPaper() {
         </br>
         <h2>Content:</h2> ${obj.content}
         </br>
-        <h2><a href="${obj.url}">Click here for the full article</a></h2>
+        <img src="${obj.urlToImage}"/>
+        <h2><a target="_blank" href="${obj.url}">Click here for the full article</a></h2>
         </br>
         <hr>
         </br>
+        
         `;
         document.body.appendChild(articleDiv);
         console.log(obj);

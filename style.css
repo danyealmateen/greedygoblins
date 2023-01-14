@@ -16,28 +16,32 @@ body {
 }
 
 #articleDiv {
+  background-color: rgba(150, 132, 54, 0.445);
   font-size: 20px;
-  margin: 150px;
+  margin: auto;
   font-weight: 900;
-  border: 3px solid rgb(48, 46, 42);
-  padding: 20px;
+  padding: 50px;
+  margin-top: 20px;
 }
 
 #renderArticles {
-  font-size: 20px;
-  background-color: rgb(92, 86, 86);
-  color: goldenrod;
-  border: 5px solid orangered;
-  border-radius: 50px;
+  background-color: beige;
+  border: 0;
   padding: 15px;
+  font-size: 20px;
+  border: 1px solid black;
 }
 
 #renderArticles:hover {
-  background-color: rgb(211, 203, 203);
+  background-color: white;
   color: black;
-  border: white 5px solid;
 }
 
 hr {
   border: solid 2px silver;
+}
+
+img {
+  width: 300px;
+  margin: 20px;
 }

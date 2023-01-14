@@ -35,7 +35,6 @@ function renderNewsPaper() {
     })
   
     .catch(error => {
-        h1.innerHTML = "Det blev ett fel";
         console.log(error);
     });
 }

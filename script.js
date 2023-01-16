@@ -17,7 +17,7 @@ let articleDiv = document.createElement("div");
 articleDiv.setAttribute("id", "articleDiv");
 
 let url =
-  "https://newsapi.org/v2/everything?q=keyword&apiKey=d83b8fc981ee4157944ca434e8a4c295";
+  "https://newsapi.org/v2/everything?q=keyword&sortBy=${}apiKey=d83b8fc981ee4157944ca434e8a4c295";
 
 function renderNewsPaper() {
   fetch(url)

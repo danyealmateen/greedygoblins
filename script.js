@@ -1,5 +1,10 @@
 let renderArticles = document.getElementById("renderArticles");
 let buttonForMode = document.getElementById("buttonForMode");
+let renderTopHeadlinesButton = document.getElementById("renderTopHeadlines");
+
+renderTopHeadlines.addEventListener("click", () => {
+  renderTopHeadlines();
+});
 
 buttonForMode.addEventListener("click", () => {
   if (mode.content == "light") {
@@ -17,9 +22,24 @@ renderArticles.addEventListener("click", () => {
 let articleDiv = document.createElement("div");
 articleDiv.setAttribute("id", "articleDiv");
 
+
+
 let url =
   "https://newsapi.org/v2/everything?q=keyword&apiKey=d83b8fc981ee4157944ca434e8a4c295";
 
+let urlForTopHeadlines =
+  "https://newsapi.org/v2/top-headlines?country=us&apiKey=d83b8fc981ee4157944ca434e8a4c295";
+
+function renderTopHeadlines() {
+  fetch(urlForTopHeadlines)
+    .then((response) => response.json())
+    .then((data) => {
+      
+      console.log(data);
+    });
+}
+
+//Renderar allting
 function renderNewsPaper() {
   fetch(url)
     .then((response) => response.json())

@@ -9,7 +9,13 @@ buttonForMode.addEventListener("click", () => {
   }
 });
 
-
+ //textinput för texten som användaren matar in
+ const textInput = document.querySelector('#textInput');
+ const text = textInput.value.toLowerCase();
+ console.log(text);
+  //drop-down menyn med sortinput
+  const sortInput = document.querySelector('#sortInput');
+  const value = sortInput.value;
 
 renderArticles.addEventListener("click", () => {
   renderNewsPaper();
@@ -19,9 +25,9 @@ let articleDiv = document.createElement("div");
 articleDiv.setAttribute("id", "articleDiv");
 
 let url =
-  "https://newsapi.org/v2/everything?q=keyword&sortBy=popularity&sortBy=relevancy&apiKey=d83b8fc981ee4157944ca434e8a4c295";
+  "https://newsapi.org/v2/everything?q=${text}&sortBy=${value}&apiKey=d83b8fc981ee4157944ca434e8a4c295";
 
-  function renderNewsPaper() {
+  function renderNewsPaper(text,value) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {

@@ -57,7 +57,8 @@ li a {
 }
 
 #renderArticles:hover,
-#buttonForMode:hover {
+#buttonForMode:hover,
+#renderTopHeadlines:hover {
   background-color: white;
   color: black;
 }

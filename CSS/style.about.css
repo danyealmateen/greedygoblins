@@ -39,6 +39,10 @@ img {
     float: right;
     background-color: white;
     padding: 150px;
+    border-radius: 5%;
+    text-align: center;
+    padding: 15vh;
+    margin: 10vh;
 }
 
 .inner-container h2{

@@ -2,7 +2,10 @@ let renderArticles = document.getElementById("renderArticles");
 let buttonForMode = document.getElementById("buttonForMode");
 let renderTopHeadlinesButton = document.getElementById("renderTopHeadlines");
 
-renderTopHeadlines.addEventListener("click", () => {
+renderTopHeadlinesButton.addEventListener("click", () => {
+  articleDiv.classList.add("hide");
+  topArticleDiv.classList.remove("hide");
+  emptyContainer();
   renderTopHeadlines();
 });
 
@@ -15,6 +18,8 @@ buttonForMode.addEventListener("click", () => {
 });
 
 renderArticles.addEventListener("click", () => {
+  articleDiv.classList.remove("hide");
+  topArticleDiv.classList.add("hide");
   emptyContainer();
   renderNewsPaper();
 });
@@ -22,7 +27,8 @@ renderArticles.addEventListener("click", () => {
 let articleDiv = document.createElement("div");
 articleDiv.setAttribute("id", "articleDiv");
 
-
+let topArticleDiv = document.createElement("div");
+topArticleDiv.setAttribute("id", "topArticleDiv");
 
 let url =
   "https://newsapi.org/v2/everything?q=keyword&apiKey=d83b8fc981ee4157944ca434e8a4c295";
@@ -34,8 +40,21 @@ function renderTopHeadlines() {
   fetch(urlForTopHeadlines)
     .then((response) => response.json())
     .then((data) => {
-      
       console.log(data);
+      data.articles.forEach((obj) => {
+        topArticleDiv.innerHTML += `<h2>Title:</h2> ${obj.title}
+        </br>
+        <h2>Author:</h2> ${obj.author}
+        </br>
+        <h2>Content:</h2> ${obj.content}
+        </br>
+        <img src="${obj.urlToImage}"/>
+        <h2><a target="_blank" href="${obj.url}">Click here for the full article</a></h2>
+        </br>
+        <hr>
+        </br>`;
+        document.body.appendChild(topArticleDiv);
+      });
     });
 }
 
@@ -70,5 +89,6 @@ function renderNewsPaper() {
 }
 
 function emptyContainer() {
+  topArticleDiv.innerHTML = " ";
   articleDiv.innerHTML = " ";
 }

@@ -35,7 +35,8 @@ li a {
   text-decoration: none;
 }
 
-#articleDiv {
+#articleDiv,
+#topArticleDiv {
   background-color: rgba(150, 132, 54, 0.445);
   font-size: 20px;
   margin: auto;
@@ -45,7 +46,8 @@ li a {
 }
 
 #renderArticles,
-#buttonForMode {
+#buttonForMode,
+#renderTopHeadlines {
   background-color: beige;
   border: 0;
   padding: 15px;
@@ -89,4 +91,8 @@ h1 {
 
 #fb-img:hover {
   filter: grayscale(1);
+}
+
+.hide {
+  display: none;
 }

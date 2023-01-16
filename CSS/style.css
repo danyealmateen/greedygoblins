@@ -35,7 +35,8 @@ li a {
   text-decoration: none;
 }
 
-#articleDiv {
+#articleDiv,
+#topArticleDiv {
   background-color: rgba(150, 132, 54, 0.445);
   font-size: 20px;
   margin: auto;
@@ -45,7 +46,8 @@ li a {
 }
 
 #renderArticles,
-#buttonForMode {
+#buttonForMode,
+#renderTopHeadlines {
   background-color: beige;
   border: 0;
   padding: 15px;
@@ -55,7 +57,8 @@ li a {
 }
 
 #renderArticles:hover,
-#buttonForMode:hover {
+#buttonForMode:hover,
+#renderTopHeadlines:hover {
   background-color: white;
   color: black;
 }
@@ -71,4 +74,26 @@ img {
 
 h1 {
   margin-top: 15px;
+}
+
+#fb-img {
+  width: 80px;
+  margin: 0;
+}
+
+#ig-img {
+  width: 120px;
+  margin: 0;
+}
+
+#ig-img:hover {
+  filter: grayscale(1);
+}
+
+#fb-img:hover {
+  filter: grayscale(1);
+}
+
+.hide {
+  display: none;
 }

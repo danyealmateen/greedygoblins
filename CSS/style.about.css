@@ -25,7 +25,7 @@ li {
 
 li a {
     display: block;
-    color: white;
+    color:white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -37,7 +37,7 @@ img {
 .inner-container{
     width: 55%;
     float: right;
-    background-color: #fdfdfd;
+    background-color: white;
     padding: 150px;
 }
 

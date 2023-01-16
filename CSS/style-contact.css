@@ -52,7 +52,7 @@ li a {
 img {
     width: 40vw;
     border-radius: 7%;
-    box-shadow: 5px 5px 5px rgba(34, 34, 34, 0.4);
+    box-shadow: 5px 5px 5px rgba(34, 34, 34, 0.4), 5px 5px 5px red inset;
     border: solid 6px white;
 }
 

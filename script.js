@@ -12,8 +12,20 @@ renderTopHeadlinesButton.addEventListener("click", () => {
 buttonForMode.addEventListener("click", () => {
   if (mode.content == "light") {
     mode.content = "dark";
+    buttonForMode.style.color = "goldenrod";
+    buttonForMode.style.backgroundColor = "black";
+    renderTopHeadlinesButton.style.color = "goldenrod";
+    renderTopHeadlinesButton.style.backgroundColor = "black";
+    renderArticles.style.color = "goldenrod";
+    renderArticles.style.backgroundColor = "black";
   } else {
     mode.content = "light";
+    buttonForMode.style.color = "black";
+    buttonForMode.style.backgroundColor = "beige";
+    renderTopHeadlinesButton.style.color = "black";
+    renderTopHeadlinesButton.style.backgroundColor = "beige";
+    renderArticles.style.color = "black";
+    renderArticles.style.backgroundColor = "beige";
   }
 });
 

@@ -16,11 +16,16 @@ body {
 }
 
 .navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   list-style-type: none;
-  margin: 0px;
+  margin: auto;
   padding: 0px;
   overflow: hidden;
   background-color: #333;
+  width: 100%;
 }
 
 li {
@@ -50,8 +55,8 @@ li a {
 #renderTopHeadlines {
   background-color: beige;
   border: 0;
-  padding: 15px;
-  font-size: 20px;
+  padding: 10px;
+  font-size: 15px;
   border: 1px solid black;
   margin-bottom: 15px;
 }

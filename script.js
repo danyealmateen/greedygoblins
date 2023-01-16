@@ -9,6 +9,8 @@ buttonForMode.addEventListener("click", () => {
   }
 });
 
+
+
 renderArticles.addEventListener("click", () => {
   renderNewsPaper();
 });
@@ -17,9 +19,9 @@ let articleDiv = document.createElement("div");
 articleDiv.setAttribute("id", "articleDiv");
 
 let url =
-  "https://newsapi.org/v2/everything?q=keyword&sortBy=${}apiKey=d83b8fc981ee4157944ca434e8a4c295";
+  "https://newsapi.org/v2/everything?q=keyword&sortBy=popularity&sortBy=relevancy&apiKey=d83b8fc981ee4157944ca434e8a4c295";
 
-function renderNewsPaper() {
+  function renderNewsPaper() {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {

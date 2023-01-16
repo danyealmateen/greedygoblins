@@ -21,12 +21,12 @@ body {
 }
 
 .contacts-div {
-    background-image: linear-gradient(to bottom, rgb(255, 202, 227) , rgb(255, 255, 255));
-    border-radius: 7%;
+    background-image: linear-gradient(to bottom, rgb(255, 202, 227), rgb(255, 255, 255));
+    border-radius: 10px;
     text-align: center;
     padding: 3vh;
     margin: 3vh;
-    box-shadow: 5px 5px 5px rgba(34, 34, 34, 0.4);
+    box-shadow: 5px 5px 5px rgba(34, 34, 34, 0.4) inset;
 }
 
 .navbar {
@@ -50,9 +50,10 @@ li a {
 }
 
 img {
-    width: 40vw;
+    max-width: 400px;
     border-radius: 7%;
-    box-shadow: 5px 5px 5px rgba(34, 34, 34, 0.4), 5px 5px 5px red inset;
+    box-shadow: 5px 5px 5px rgba(34, 34, 34, 0.4);
+
     border: solid 6px white;
 }
 

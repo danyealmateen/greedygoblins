@@ -22,7 +22,7 @@ body {
 
 .contacts-div {
     background-color: white;
-    border-radius: 10%;
+    border-radius: 7%;
     text-align: center;
     padding: 3vh;
     margin: 3vh;
@@ -50,6 +50,7 @@ li a {
 
 img {
     width: 40vw;
+    border-radius: 7%;
 }
 
 /*@media screen and (min-width: 600px) {

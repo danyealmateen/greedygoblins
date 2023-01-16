@@ -21,9 +21,11 @@ body {
 }
 
 .contacts-div {
-    border: black solid 3px;
+    background-color: white;
+    border-radius: 10%;
     text-align: center;
-    margin: 10vh;
+    padding: 3vh;
+    margin: 3vh;
 }
 
 .navbar {

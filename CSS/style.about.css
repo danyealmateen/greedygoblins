@@ -7,7 +7,7 @@ body{
     align-items: center;
     font-size: 20px;
     font-family: “Playfair Display”, sans-serif;
-    background-image: url(bg.jpg);
+    background-image: url(../IMAGES/bg.jpg);
     margin: auto;
     background-color: rgba(150, 132, 54, 0.445);
 }

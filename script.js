@@ -1,4 +1,13 @@
 let renderArticles = document.getElementById("renderArticles");
+let buttonForMode = document.getElementById("buttonForMode");
+
+buttonForMode.addEventListener("click", () => {
+  if (mode.content == "light") {
+    mode.content = "dark";
+  } else {
+    mode.content = "light";
+  }
+});
 
 renderArticles.addEventListener("click", () => {
   renderNewsPaper();
@@ -33,8 +42,8 @@ function renderNewsPaper() {
       });
       console.log(data);
     })
-  
-    .catch(error => {
-        console.log(error);
+
+    .catch((error) => {
+      console.log(error);
     });
 }

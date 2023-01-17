@@ -12,12 +12,18 @@ body {
 }
 
 .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
-    margin: 0px;
+    margin: auto;
     padding: 0px;
     overflow: hidden;
     background-color: #333;
-}
+    width: 100%;
+  }
+  
 li {
     float: left;
 }

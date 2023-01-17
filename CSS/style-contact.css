@@ -21,8 +21,12 @@ body {
 }
 
 .contacts-div {
-    border: black solid 3px;
+    background-image: linear-gradient(to bottom, rgb(255, 202, 227), rgb(255, 255, 255));
+    border-radius: 10px;
     text-align: center;
+    padding: 3vh;
+    margin: 3vh;
+    box-shadow: 5px 5px 5px rgba(34, 34, 34, 0.4) inset;
 }
 
 .navbar {
@@ -31,20 +35,36 @@ body {
     padding: 0px;
     overflow: hidden;
     background-color: #333;
-  }
-  
-  li {
+}
+
+li {
     float: left;
-  }
-  
-  li a {
+}
+
+li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
+}
 
-/*@media screen and (min-width: 600px) {
-    
-}*/
+img {
+    max-width: 400px;
+    border-radius: 7%;
+    box-shadow: 5px 5px 5px rgba(34, 34, 34, 0.4);
+
+    border: solid 6px white;
+}
+
+@media screen and (min-width: 700px) {
+    .contacts-container {
+        display: flex;
+        flex-direction: row wrap;
+        align-content: space-between;
+    }
+
+    .contacts-div {
+        margin: 20px;
+    }
+}

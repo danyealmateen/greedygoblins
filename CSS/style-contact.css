@@ -13,12 +13,11 @@ body {
 }
 
 .contacts-div {
-    background-image: linear-gradient(to bottom, rgb(228, 228, 228), rgb(255, 255, 255));
+    background-image: linear-gradient(to top, rgb(228, 228, 228), #ffffff 60%);
     border-radius: 10px;
     text-align: center;
     padding: 40px;
     margin: 3vh;
-    box-shadow:15px 15px 13px -13px rgba(34, 34, 34, 0.4);
     font-family: "Actor", sans-serif;
     text-decoration: none;
 
@@ -31,6 +30,9 @@ a {
 
 h1 {
     font-size: 40px;
+    background-image: linear-gradient(to top, rgb(228, 228, 228), #ffffff 20%);
+    padding: 30px;
+    border-radius: 10px;
 }
 
 .titel {
@@ -48,31 +50,31 @@ h1 {
     overflow: hidden;
     background-color: #333;
     width: 100%;
-  }
-  
-  /* li {
+}
+
+/* li {
     float: left;
   } */
-  
-  li a {
+
+li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    
-  }
 
-  .map>* {
+}
+
+.map>* {
     border-radius: 10px;
     margin: 20px;
-    box-shadow:15px 15px 13px -13px rgba(34, 34, 34, 0.4);
-  }
+    box-shadow: 15px 15px 13px -13px rgba(34, 34, 34, 0.4);
+}
 
 img {
     max-width: 400px;
     border-radius: 7%;
-    box-shadow:15px 15px 13px -13px rgba(34, 34, 34, 0.4);
+    box-shadow: 15px 15px 13px -13px rgba(34, 34, 34, 0.4);
     margin: 30px;
     border: solid 6px white;
 }
@@ -84,12 +86,13 @@ img {
         align-content: space-between;
     }
 
-    .contacts-div {
-        margin: 20px;
+    h1 {
+
+        margin: 30px;
     }
 
-    h1 {
-       
-        margin: 50px;
+    .map>* {
+        width: 550px;
+        height: 550px;
     }
 }

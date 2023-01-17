@@ -1,7 +1,10 @@
 let renderArticles = document.getElementById("renderArticles");
 let buttonForMode = document.getElementById("buttonForMode");
-
 let renderTopHeadlinesButton = document.getElementById("renderTopHeadlines");
+let articleDiv = document.createElement("div");
+articleDiv.setAttribute("id", "articleDiv");
+let topArticleDiv = document.createElement("div");
+topArticleDiv.setAttribute("id", "topArticleDiv");
 
 renderTopHeadlinesButton.addEventListener("click", () => {
   articleDiv.classList.add("hide");
@@ -36,12 +39,6 @@ renderArticles.addEventListener("click", () => {
   emptyContainer();
   renderNewsPaper();
 });
-
-let articleDiv = document.createElement("div");
-articleDiv.setAttribute("id", "articleDiv");
-
-let topArticleDiv = document.createElement("div");
-topArticleDiv.setAttribute("id", "topArticleDiv");
 
 let url =
   "https://newsapi.org/v2/everything?q=keyword&apiKey=d83b8fc981ee4157944ca434e8a4c295";

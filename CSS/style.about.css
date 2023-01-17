@@ -48,7 +48,18 @@ img {
     border-radius: 5%; */
     text-align: center;
     padding: 15vh;
-    margin: 10vh;
+    margin: 10vh; 
+}
+
+.contacts-div {
+    background-image: linear-gradient(to top, rgb(228, 228, 228), #ffffff 60%);
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px;
+    margin: 3vh;
+    font-family: "Actor", sans-serif;
+    text-decoration: none;
+
 }
 
 .inner-container h2{

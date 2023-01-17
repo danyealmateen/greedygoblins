@@ -27,6 +27,11 @@ body {
     padding: 40px;
     margin: 3vh;
     box-shadow:15px 15px 13px -13px rgba(34, 34, 34, 0.4);
+    font-family: "Actor", sans-serif;
+}
+
+.titel {
+    font-family: "Playfair Display", sans-serif;
 }
 
 .navbar {

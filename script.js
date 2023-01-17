@@ -1,5 +1,6 @@
 let renderArticles = document.getElementById("renderArticles");
 let buttonForMode = document.getElementById("buttonForMode");
+<<<<<<< Updated upstream
 let renderTopHeadlinesButton = document.getElementById("renderTopHeadlines");
 
 renderTopHeadlinesButton.addEventListener("click", () => {
@@ -8,12 +9,21 @@ renderTopHeadlinesButton.addEventListener("click", () => {
   emptyContainer();
   renderTopHeadlines();
 });
+=======
+let body = document.getElementById("body");
+>>>>>>> Stashed changes
 
 buttonForMode.addEventListener("click", () => {
   if (mode.content == "light") {
     mode.content = "dark";
+    body.style.color = "orange";
+    buttonForMode.style.color = "orange";
+    renderArticles.style.color = "orange";
   } else {
     mode.content = "light";
+    body.style.color = "black";
+    buttonForMode.style.color = "black";
+    renderArticles.style.color = "black";
   }
 });
 

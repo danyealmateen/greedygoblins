@@ -7,7 +7,6 @@ body {
     align-items: center;
     font-size: 20px;
     font-family: "Playfair Display", sans-serif;
-    /*background-image: url(../IMAGES/bg.jpg);*/
     margin: auto;
     background-image: linear-gradient(to bottom, rgb(238, 228, 180), rgb(255, 255, 255));
 }
@@ -21,12 +20,12 @@ body {
 }
 
 .contacts-div {
-    background-image: linear-gradient(to bottom, rgb(235, 235, 235), rgb(255, 255, 255));
+    background-image: linear-gradient(to bottom, rgb(228, 228, 228), rgb(255, 255, 255));
     border-radius: 10px;
     text-align: center;
     padding: 40px;
     margin: 3vh;
-    box-shadow: 5px 5px 10px rgba(34, 34, 34, 0.4);
+    box-shadow:15px 15px 13px -13px rgba(34, 34, 34, 0.4);
 }
 
 .navbar {
@@ -52,7 +51,7 @@ li a {
 img {
     max-width: 400px;
     border-radius: 7%;
-    box-shadow: 5px 5px 5px rgba(34, 34, 34, 0.4);
+    box-shadow:15px 15px 13px -13px rgba(34, 34, 34, 0.4);
     margin: 30px;
     border: solid 6px white;
 }

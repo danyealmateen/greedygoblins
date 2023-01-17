@@ -12,10 +12,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Playfair Display", sans-serif;
+  font-family: sans-serif;
   background-color: white;
 }
-
 
 .navbar {
   display: flex;
@@ -30,10 +29,6 @@ body {
   width: 100%;
 }
 
-/* li {
-  float: left;
-} */
-
 li a {
   display: block;
   color: white;
@@ -44,13 +39,11 @@ li a {
 
 #articleDiv,
 #topArticleDiv {
-  background-color: rgba(150, 132, 54, 0.445);
   font-size: 20px;
   margin: auto;
   font-weight: 900;
   padding: 50px;
-  margin-top: 20px;
-
+  margin: 30px;
 }
 
 #renderArticles,
@@ -61,7 +54,7 @@ li a {
   padding: 10px;
   font-size: 15px;
   border: 1px solid black;
-  margin-bottom: 15px;
+  margin: 15px;
 }
 
 #renderArticles:hover,
@@ -72,7 +65,7 @@ li a {
 }
 
 hr {
-  border: solid 2px silver;
+  border: solid 2px black;
 }
 
 img {

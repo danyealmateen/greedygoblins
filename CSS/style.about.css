@@ -47,8 +47,8 @@ img {
     padding: 150px;
     border-radius: 5%; */
     text-align: center;
-    padding: 15vh;
-    margin: 10vh; 
+    padding: 15px;
+    margin-top: 15px; 
 }
 
 .contacts-div {
@@ -67,3 +67,5 @@ img {
     font-size: 30px;
     font-weight: 900;
 }
+
+
